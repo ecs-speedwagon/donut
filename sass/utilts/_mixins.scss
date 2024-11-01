@@ -1,0 +1,10 @@
+@mixin txt($font-f, $font-w, $font-s, $line-h, $lett-s, $color, $txt-decor:none, $txt-align:left){
+    font-family: $font-f;
+    font-weight:  $font-w;
+    font-size: $font-s;
+    line-height:  $line-h;
+    letter-spacing: $lett-s;
+    color: $color;
+    text-decoration: $txt-decor;
+    text-align: $txt-align;
+}
