@@ -1,0 +1,16 @@
+@media screen and (min-width:768px){
+    .program{
+        padding: 50px 0px 20px;
+        & .container{
+            display: flex;
+            gap: 32px;
+        }
+        & .program-cont{
+            width: 329px;
+        & .title{
+            text-align: start;
+            margin:0px 0px 28px;
+        }
+        }
+        }
+    }
