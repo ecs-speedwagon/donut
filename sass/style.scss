@@ -1,1 +1,13 @@
-@import "./utilts/vars", "./components/header";
+@import "./utilts/vars", "./components/header", "./components/hero", "./components/about-us", "./components/program", "./components/speakers", "./components/price";
+
+
+li{
+    list-style-type: none;
+}
+@media screen and (min-width:768px){
+    .container{
+        width: 704px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
