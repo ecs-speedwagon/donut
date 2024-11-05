@@ -1,0 +1,31 @@
+.participants_el:nth-child(2n+1){
+    display:none;
+}
+@media screen and (min-width:768px){
+    .reviews{
+        padding-bottom: 80px;
+    }
+    .participants{
+        display: flex;
+        gap: 32px;
+        padding: 0px;
+        &_el-w{
+            margin-top: 75px;
+            & img{
+                width: 336px;
+                height: 336px;
+            }
+        }
+        &_el:nth-child(2n+1){
+            display:block;
+            & img{
+                width: 151px;
+                height: 151px;
+            }
+        }
+    }
+    .reviews-p{
+        text-align: center;
+        margin: 0px;
+    }
+}

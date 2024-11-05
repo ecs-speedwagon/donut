@@ -278,13 +278,13 @@
             </section>
             <section class="reviews">
                 <div class="container">
-                    <h1>Reviews</h1>
+                    <h1 class="title">Reviews</h1>
                     <ul class="participants">
                         <li class="participants_el">
                             <img src="./img/john.png" srcset="./img/john.png 1x, ./img/john@2x.png 2x" alt="John">
                             <p>John</p>
                         </li>
-                        <li class="participants_el">
+                        <li class="participants_el participants_el-w">
                             <img src="./img/will.png" srcset="./img/will.png 1x, ./img/will@2x.png 2x" alt="Will">
                             <p>Will</p>
                         </li>
@@ -297,7 +297,8 @@
                         I was impressed with the way she explained everything
                         to people. You can be sure you will manage to cook a delicious dish even if it is your 
                         first time in the kitchen!
-                        Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to everyone!</p>
+                    </p>
+                    <p class="reviews-p">Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to everyone!</p>
                     <div class="slider">
                         <div class="decor-line"></div>
                         <p>2/15</p>
@@ -309,12 +310,18 @@
                 <div class="container">
                     <h1 class="title">Registration</h1>
                     <div class="regis-cont">
-                        <h3>Apply your personal info<br> for registration</h3>
-                        <form class="register">
-                            <input class="register_el" type="text" placeholder="Your name">
-                            <input class="register_el" type="number" placeholder="Phone number">
-                            <input class="register_el" type="email" placeholder="Email">
-                        </form>
+                        <div class="reg-loc">
+                            <p class="reg-loc-p">May 23, 11:00</p>
+                            <p class="reg-loc-p">New York</p>
+                        </div>
+                        <div class="form-cont">
+                            <h3>Apply your personal info<br> for registration</h3>
+                            <form class="register">
+                                <input class="register_el" type="text" placeholder="Your name">
+                                <input class="register_el" type="number" placeholder="Phone number">
+                                <input class="register_el" type="email" placeholder="Email">
+                            </form>
+                        </div>
                         <button class="btn" type="submit">Register</button>
                     </div>
                 </div>
@@ -380,6 +387,7 @@
         </div>
         <footer>
             <div class="foot-cont">
+                <div class="container">
                 <ul class="foot-text">
                     <li class="foot-text_el">
                         <svg class="foot-text-svg" width="11" height="15">
@@ -393,8 +401,9 @@
                         </svg>
                         <a href="#" class="foot-text_el">New York</a>
                     </li>
-                </div>
+                </ul>
                 <img src="./img/footer-donuts.svg" class="footer-donuts" alt="donuts" width="60" height="40">
+            </div>
             </div>
         </footer>
 
