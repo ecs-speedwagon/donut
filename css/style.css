@@ -222,6 +222,26 @@
           box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.178), inset 0px 25px 20px -2px #F3848C;
 }
 
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding-bottom: 30px;
+  }
+  .about-us .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 32px;
+  }
+  .about-us .about-us-img {
+    width: 336;
+  }
+  .about-us .about-us-text .title {
+    text-align: start;
+  }
+  .about-us .about-us-text .about-us-rm-decs {
+    margin-bottom: 28px;
+  }
+}
 .about-us-img {
   width: 280px;
   height: 285px;
