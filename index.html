@@ -3,88 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONUT-MASTERCLASS</title>
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" type="image/x-icon" href="./img/Ellipse 18.png">
-    <title>DONUT-MASTERCLASS</title>
 </head>
 <body>
     <header>
-    <div class="header-hero-background">
-            <div class="header-div">
-                <img class="logo" src="" alt="">
+        <div class="container">
+                <div class="header-div">
+                    <a href="#"><img class="logo" src="./img/logo.svg" alt=""></a>
 
-                <button 
-                class="menu-toggle js-open-menu" 
-                aria-expanded="false" 
-                aria-controls="mobile-menu"> 
-                <svg 
-                width="24" 
-                height="24" 
-                fill="currentColor" 
-                viewBox="0 0 20 20" 
-                xmlns="http://www.w3.org/2000/svg" 
-                > 
-                <path 
-                    fill-rule="evenodd" 
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" 
-                    clip-rule="evenodd" 
-                ></path> 
-                </svg> 
-            </button>
-            
-            
-            <div class="container"> 
-                <nav class="header-nav">
-                    <ul class="header-ul">
-                        <li class="header-li">
-                            <a href="#">About us</a> 
-                        </li>
-                        <li class="header-li">
-                            <a href="#">Program</a> 
-                        </li>   
-                        <li class="header-li">
-                            <a href="#">Speakers</a> 
-                        </li>
-                        <li class="header-li">
-                            <a href="#">Price</a> 
-                        </li> 
-                        <li class="header-li">
-                            <a href="#">Reviews</a> 
-                        </li> 
-                        <li class="header-li">
-                            <a href="#">Contacts</a> 
-                        </li>
-                    </ul>
-                </nav>
+                    <button 
+                    class="menu-toggle js-open-menu" 
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu"> 
+                    <svg 
+                    width="24" 
+                    height="24" 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    > 
+                    <path 
+                        fill-rule="evenodd" 
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" 
+                        clip-rule="evenodd" 
+                    ></path> 
+                    </svg> 
+                    </button>
+                </div>
+        </div>            
+                <div class="container"> 
+                    <nav class="header-nav">
+                        <ul class="header-ul">
+                            <li class="header-li">
+                                <a href="#">About us</a> 
+                            </li>
+                            <li class="header-li">
+                                <a href="#">Program</a> 
+                            </li>   
+                            <li class="header-li">
+                                <a href="#">Speakers</a> 
+                            </li>
+                            <li class="header-li">
+                                <a href="#">Price</a> 
+                            </li> 
+                            <li class="header-li">
+                                <a href="#">Reviews</a> 
+                            </li> 
+                            <li class="header-li">
+                                <a href="#">Contacts</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    </header>
+
+            <main>
+                <section class="hero">
+        <div class="container">
+                    <h1 class="hero-title">Donut Masterclass with the Donut King</h1>
+                    <p class="hero-text">Hosted by Eva Green</p>
+   <!-- тут додав дів      -->
+                    
+                        <button class="btn" type="submit">Register</button>
+                    <div class="hero-div">  
+                        <svg class="hero-svg" width="16px" height="16px">
+                            <use href="./img/symbol-defs.svg#icon-Twitter" ></use>
+                        </svg>
+                        <svg class="hero-svg" width="16px" height="16px">
+                            <use href="./img/symbol-defs.svg#icon-Instagram"></use>
+                        </svg>
+                        <svg class="hero-svg" width="16px" height="16px">
+                            <use href="./img/symbol-defs.svg#icon-Facebook"></use>
+                        </svg>
+                    </div>
             </div>
-        </header>
-
-        <main>
-            <section class="hero">
-                <h1>Donut Masterclass with the Donut King</h1>
-                <p>Hosted by Eva Green</p>
-                <button class="btn">Register</button>
-                <svg class="place-icon" width="16px" height="16px">
-                    <use href="./img/symbol-defs.svg#icon-Twitter" ></use>
-                </svg>
-                <svg class="place-icon" width="16px" height="16px">
-                    <use href="./img/symbol-defs.svg#icon-Instagram"></use>
-                </svg>
-                <svg class="place-icon" width="16px" height="16px">
-                    <use href="./img/symbol-defs.svg#icon-Facebook"></use>
-                </svg>
-            </section>
-    </div>
+                </section>
+            
             <div class="about-us">
-                <img class="about-us-img" src="./img/the-hand.png" srcset="./img/the-hand.png 1x, ./img/the-hand.png 2x" alt="">
-                <h3 class="title">About us</h3>
-                <p class="about-us-text">Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will save the world! Eva has been baking since she was six years old and over the last 49 years, she has created hundreds of cakes for weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for excellence. </p>
-                <p class="about-us-rm-decs">We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will enjoy our cooking atmosphere!</p>
-                <a class="about-us-rm" href="">Read more</a>
-            </div>
+                <div class="container">
+                    <img class="about-us-img" src="./img/the hand-mobile.png" srcset="./img/the hand-mobile.png 1x, ./img/the hand-mobile.png 2x" alt="">
+                    <h3 class="title">About us</h3>
+                    <p class="about-us-text">Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will save the world! Eva has been baking since she was six years old and over the last 49 years, she has created hundreds of cakes for weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for excellence. </p>
+                    <p class="about-us-rm-decs">We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will enjoy our cooking atmosphere!</p>
+                    <a class="about-us-rm" href="">Read more</a>
+                </div>
+            </div>           
+
     <div class="program">
+        <div class="container">
             <h3 class="title">Program</h3>
             <p class="program-text">Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York donut shop!</p>
             <ul class="program-ul">
@@ -147,8 +157,8 @@
                         </li>               
                     </ul>
                 </div>
+        </div>
     </div>
-
             <section class="speakers">
                 <div class="container">
                     <h1 class="title">Speakers</h1>
@@ -268,7 +278,7 @@
                             <p>John</p>
                         </li>
                         <li class="participants_el">
-                            <img src="./img/will.png" srcset="./img/will.png 1x, ./img/will@2x.png 2x" alt="Will">
+                            <img src="./img/will.png" srcset="./img/will.png 1x, ./img/will@2x.png 2x" alt="Will" width="280px" height="280px">
                             <p>Will</p>
                         </li>
                         <li class="participants_el">
@@ -334,6 +344,7 @@
             </section>
         </main>
         <div class="menu-container js-menu-container" id="mobile-menu"> 
+            
             <button class="menu-toggle js-close-menu"> 
               <svg 
                 fill="currentColor" 
@@ -349,11 +360,11 @@
               </svg> 
             </button> 
         <div class="mobile-menu">
-              <img class="mobile-logo" src="" alt="">
+              <img width="109px" height="51px" class="mobile-logo" src="./img/logo.svg" alt="#">
             <ul class="mobile-menu-el"> 
                 <li><a href="#" class="link">About us</a></li> 
                 <li><a href="#" class="link">Program</a></li> 
-                <li><a href="#" class="link">Speakers</a></li> 
+                <li><a href="#" class="link">Speaker</a></li> 
                 <li><a href="#" class="link">Price</a></li> 
                 <li><a href="#" class="link">Reviews</a></li> 
                 <li><a href="#" class="link">Contacts</a></li> 
