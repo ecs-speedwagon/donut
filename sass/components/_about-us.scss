@@ -1,3 +1,23 @@
+@media screen and (min-width:768px){
+    .about-us{
+        padding-bottom: 30px;
+        & .container{
+            display: flex;
+            gap: 32px;
+        }
+        & .about-us-img{
+            width: 336;
+        }
+        & .about-us-text{
+            & .title{
+                text-align: start;
+            }
+            & .about-us-rm-decs{
+                margin-bottom: 28px;
+            }
+        }
+    }
+}
 .about-us-img{
     width: 280px;
     height: 285px;

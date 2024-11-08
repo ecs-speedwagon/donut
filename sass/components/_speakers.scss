@@ -1,0 +1,13 @@
+@media screen and (min-width:768px){
+    .speakers{
+        padding: 20px 0px 77px;
+    }
+    .speakers-ul{
+    &_el{
+        width: 152px;
+        & img{
+            width: 152px;
+        }
+    }
+}
+}
