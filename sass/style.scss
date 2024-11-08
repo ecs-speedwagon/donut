@@ -1,14 +1,20 @@
-@import "./utilts/vars", "./components/header", "./components/hero", "./components/about-us", "./components/program", "./components/speakers", "./components/price",
-"./components/reviews", "./components/registration", "./components/contacts";
+@import "./utilts/vars","./utilts/mixins", "./components/header", "./components/about-us";
 
-
-li{
-    list-style-type: none;
+h5{
+    margin-block-start: 0;
+    margin-block-end: 0 ;
 }
-@media screen and (min-width:768px){
-    .container{
-        width: 704px;
-        margin: 0 auto;
-        padding: 0;
-    }
+img{
+    overflow-clip-margin: content-box 0px;
+}
+a{
+    text-decoration: none;
+    color: var(--fourth-color);
+    cursor: default;
+}
+ul{
+    padding-inline-start: 0px;
+}
+li{
+    list-style: none;
 }
