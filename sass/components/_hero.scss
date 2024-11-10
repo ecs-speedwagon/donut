@@ -1,10 +1,19 @@
 @media screen and (min-width:768px){
-    .hero{
-        width: 319px;
-        padding: 28px 0 40px;
-        margin-bottom: 36px;
-    }
     .hero-icon{
         margin: 0;
+    }
+    .hero{
+        background-image:url(/img/tablet-circles/hero-circle.svg), url(/img/tablet-hero-bg.png);
+        background-size: 100px 100px, cover;
+        background-position: 268px 92px, center;
+        padding: 95px 0 40px;
+        margin-bottom: 36px;
+        width: 100%;
+    }
+    .hero-text{
+      text-align: start
+    }
+    .hero-div{
+      margin: 20px 0px 0px;
     }
 }
