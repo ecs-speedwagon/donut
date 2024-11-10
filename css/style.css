@@ -99,20 +99,6 @@
     width: 106px;
     height: 46px;
   }
-  .hero {
-    background-image: url(/img/tablet-circles/hero-circle.svg), url(/img/tablet-hero-bg.png);
-    background-size: 100px 100px, cover;
-    background-position: 268px 92px, center;
-    padding: 95px 0 40px;
-    margin-bottom: 36px;
-    width: 100%;
-  }
-  .hero-text {
-    text-align: start;
-  }
-  .hero-div {
-    margin: 20px 0px 0px;
-  }
 }
 .btn {
   font-family: "Montserrat";
@@ -285,23 +271,22 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .about-us {
-    padding-bottom: 30px;
+  .hero-icon {
+    margin: 0;
   }
-  .about-us .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 32px;
+  .hero {
+    background-image: url(/img/tablet-circles/hero-circle.svg), url(/img/tablet-hero-bg.png);
+    background-size: 100px 100px, cover;
+    background-position: 268px 92px, center;
+    padding: 95px 0 40px;
+    margin-bottom: 36px;
+    width: 100%;
   }
-  .about-us .about-us-img {
-    width: 336;
-  }
-  .about-us .about-us-text .title {
+  .hero-text {
     text-align: start;
   }
-  .about-us .about-us-text .about-us-rm-decs {
-    margin-bottom: 28px;
+  .hero-div {
+    margin: 20px 0px 0px;
   }
 }
 .about-us {
@@ -366,21 +351,43 @@
 }
 
 @media screen and (min-width: 768px) {
-  .program {
-    padding: 50px 0px 20px;
+  .about-us {
+    background-image: url(/img/tablet-circles/about-us-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top 55px left 416px;
+    margin: 35px 0px 30px;
   }
-  .program .container {
+  .about-us .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 32px;
   }
-  .program .program-cont {
-    width: 329px;
+  .about-us-img {
+    width: 336px;
+    height: 359px;
   }
-  .program .program-cont .title {
+  .about-us-cont .title {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 0.03px;
+    color: #3C322D;
+    text-decoration: none;
+    text-align: center;
     text-align: start;
     margin: 0px 0px 28px;
+  }
+  .about-us-cont .about-us-rm {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03px;
+    color: #3C322D;
+    text-decoration: none;
+    text-align: center;
   }
 }
 .program .title {
@@ -450,6 +457,47 @@
   width: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .program {
+    padding: 50px 0px 20px;
+    background-image: url(/img/tablet-circles/program-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 50px 0px 20px;
+  }
+  .program .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 32px;
+  }
+  .program .program-cont {
+    width: 329px;
+  }
+  .program .program-cont .title {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 0.03px;
+    color: #3C322D;
+    text-decoration: none;
+    text-align: center;
+    text-align: start;
+    margin: 0px 0px 28px;
+  }
+  .program .program-cont .program-rm {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03px;
+    color: #3C322D;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
 h5 {
   -webkit-margin-before: 0;
           margin-block-start: 0;
