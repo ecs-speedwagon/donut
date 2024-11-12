@@ -72,6 +72,21 @@
       height: 46px;
     }
   }
+  .hero{
+    background-image:url(/img/tablet-circles/hero-circle.svg), url(/img/tablet-hero-bg.png);
+    background-size: 100px 100px, cover;
+    background-position: 268px 92px, center;
+    padding: 95px 0 40px;
+    margin-bottom: 36px;
+    width: 100%;
+}
+.hero-text{
+  text-align: start;
+}
+.hero-div{
+  margin: 20px 0px 0px;
+}
+}
 
 .btn{
     @include txt("Montserrat", 400, 18px, 22px, $white-col,none, center);
