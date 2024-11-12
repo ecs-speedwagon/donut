@@ -44,7 +44,7 @@
  .hero-text{
     @include txt("Montserrat Alternates", 500, 16px, 20px, $dark-text,none,center);
     text-align: center;
-  
+    margin: 20px 0;
   }
   .hero-div{
     margin-bottom: 5px;
@@ -72,6 +72,21 @@
       height: 46px;
     }
   }
+  .hero{
+    background-image:url(/img/tablet-circles/hero-circle.svg), url(/img/tablet-hero-bg.png);
+    background-size: 100px 100px, cover;
+    background-position: 268px 92px, center;
+    padding: 95px 0 40px;
+    margin-bottom: 36px;
+    width: 100%;
+}
+.hero-text{
+  text-align: start;
+}
+.hero-div{
+  margin: 20px 0px 0px;
+}
+}
 
 .btn{
     @include txt("Montserrat", 400, 18px, 22px, $white-col,none, center);
@@ -128,7 +143,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0;
   padding: 0;
   background-color: transparent;
