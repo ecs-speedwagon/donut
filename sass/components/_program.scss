@@ -16,6 +16,14 @@
     }
 
     .program{
+        background-image: url(/img/mobile-circles/program\ decor.png);
+        background-repeat: no-repeat;
+        background-position: 6px 0;
+       & .program-ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
         & .title{
        @include txt("Montserrat Alternates", 500, 23px, 30px, 0.03px, $dark-text,none, center);   
        }
@@ -27,13 +35,11 @@
         display: none;}
       & .program-rm{
         @include txt("Montserrat", 500, 16px, 20px, 0.03px, $dark-text,none, center);   
-         padding-top: 10px;
       }
     & .program-ul-el{
          display: flex;
          gap: 10px;
          align-items: center;
-
          & .program-ul-el-text{
             @include txt("Montserrat", 400, 16px, 20px, 0.03px, $dark-text,none, left);   
             height: 20px;
@@ -44,33 +50,29 @@
          }
     }
    }
-//    .program-imgs{
-//     & .program-imgs-ul{
-//         display: flex;
-//         flex-wrap: wrap;
-//     }
-//     & .program-imgs-title{
-//         @include txt("Montserrat Alternates", 500, 16px, 20px, 0.03px, $white-col,none, center);   
-//     }
-//     & .program-imgs-text{
-//         @include txt("Montserrat", 400, 15px, 20px, 0.03px, $white-col,none, center);   
+   .program-imgs{
+    & .program-imgs-ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    & .program-imgs-title{
+        @include txt("Montserrat Alternates", 500, 16px, 20px, 0.03px, $white-col,none, center);   
+    }
+    & .program-imgs-text{
+        @include txt("Montserrat", 400, 15px, 20px, 0.03px, $white-col,none, center);   
 
-//     }
+    }
  
-//     & .program-imgs-el:nth-child(1){
-//         background-image: url(/img/Type\ of\ the\ event.png); 
-//         background-size: no-repeat;
+    & .program-imgs-el:nth-child(1){
+        background-image: url(/img/Type\ of\ the\ event.png); 
+        background-size: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 200px;
 
-//         background-position: center;
-
-//         background-size: cover;
-
-//         height: 200px;
-
-//         width: 200px;
-
-//     }
-//    }
+    }
+   }
 //    p{
 //     margin-block-start: 0em;
 //     margin-block-end: 0em;
