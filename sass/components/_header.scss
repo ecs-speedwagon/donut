@@ -1,3 +1,9 @@
+
+header{
+  @media screen and (min-width:1200px){
+    position: relative;
+    }
+}
 .container{
   width: 320px;
   padding: 0 15px;
@@ -8,6 +14,13 @@
       width: 704px;
       margin: 0 auto;
       padding: 0;
+  }
+  @media screen and (min-width:1200px){
+    .container{
+      width: 1280px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
   }
 }
 .header{
@@ -21,10 +34,26 @@
   gap: 100px;
   display: flex;
 }
+.header-ul{
+  @media screen and (min-width:1200px){
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+  }
+}
 .header-nav{
   display: none;
+  @media screen and (min-width:1200px){
+    position: absolute;
+    width: 766px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 155px;
+    margin-top: 20px;
+  }
 }
-
 .hero{
   background-image: url(/img/hero-bg.png);
   background-repeat: no-repeat;
@@ -35,16 +64,30 @@
   margin: 0 auto;
   padding-top: 85px;
   display: flex;
-  flex-direction: column;}
+  flex-direction: column;
+  @media screen and (min-width:1200px){
+    height: 556px;
+    background-image: url(./img/donut-bg-desctop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
  .hero-title{
     @include txt("Montserrat Alternates", 600, 27px, 34px, 0.03px, $dark-text,none, center);   
     width: 285px;
-    margin: 0px
+    margin: 0px;
+    @media screen and (min-width:1200px){
+      @include txt("Montserrat Alternates", 600, 60px, 65px, 0.03px, $dark-text,none, left);  
+      width: 770px;
+      margin-bottom: 35px;
+    }
   }
  .hero-text{
     @include txt("Montserrat Alternates", 500, 16px, 20px, $dark-text,none,center);
-    text-align: center;
-  
+    @media screen and (min-width:1200px){
+      @include txt("Montserrat Alternates", 500, 24px, 29.26px, $dark-text,none,left);
+      margin-bottom: 35px;
+    }
   }
   .hero-div{
     margin-bottom: 5px;
@@ -203,7 +246,7 @@
 // #fd588c
 .mobile-menu .link:focus{
   background-color: #fd588c;
- color: $white-col;
+  color: $white-col;
  
 box-shadow:
 0px 2px 10px 1px rgba(0, 0, 0, 0.178),

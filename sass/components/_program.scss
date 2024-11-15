@@ -7,7 +7,11 @@
       }
       & .program-rm-decs{
         @include txt("Montserrat", 400, 18px, 22px, 0.03px, $dark-text,none, left);   
-        display: none;}
+        display: none;
+        @media screen and (min-width:1200px){
+          display: block;
+          }
+      }
       & .program-rm{
         @include txt("Montserrat", 500, 16px, 20px, 0.03px, $dark-text,none, center);   
          padding-top: 10px;
@@ -71,6 +75,11 @@
       }
       & .program-cont{
           width: 329px;
+          @media screen and (min-width:1200px){
+            width:  417px;
+            height: 521px;
+            margin-bottom: 100px;
+            }
       & .title{
         @include txt("Montserrat Alternates", 500, 32px, 30px, 0.03px, $dark-text,none, center);
           text-align: start;
@@ -79,6 +88,9 @@
       .program-rm{
         @include txt("Montserrat", 500, 18px, 20px, 0.03px, $dark-text,none, center);
         margin-top: 30px;
+        @media screen and (min-width:1200px){
+          display: none;
+          }
     }
       }
       }
