@@ -25,4 +25,32 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+     const aboutClickableText = document.getElementById('aboutClickableText');
+     const aboutContent = document.querySelector('.aboutContent');
+
+     aboutClickableText.addEventListener('click', () => {
+      aboutContent.classList.toggle('show');
+     });
+     const programClickableText = document.getElementById('programClickableText');
+     const programContent = document.querySelector('.programContent');
+   
+     programClickableText.addEventListener('click', () => {
+       programContent.classList.toggle('show');
+     });
 })();
+
+
+  // const readMoreButton = document.querySelector('.read-more');
+  // const hiddenText = document.querySelector('.hidden-text');
+  
+  // readMoreButton.addEventListener('click', () => {
+  //   if (hiddenText.style.display === 'none') {
+  //     hiddenText.style.display = 'block';
+  //     readMoreButton.textContent = 'Read less';
+  //   } else {
+  //     hiddenText.style.display = 'none';
+  //     readMoreButton.textContent = 'Read more';   
+  
+  //   }
+  // });
+ 

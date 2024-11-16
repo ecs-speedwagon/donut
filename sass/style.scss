@@ -1,4 +1,4 @@
-@import "./utilts/vars","./utilts/mixins", "./components/header","./components/hero", "./components/about-us", "./components/program", "./components/price", "./components/speakers";
+@import "./utilts/vars","./utilts/mixins", "./components/header","./components/hero", "./components/about-us", "./components/program", "./components/price", "./components/speakers", "./components/reviews", "./components/registration", "./components/contacts";
 
 h5{
     margin-block-start: 0;
@@ -26,3 +26,16 @@ h4{
     margin-block-start: 0em;
     margin-block-end: 0em;
   }
+//   .aboutContent {
+//     display: none;
+//   }
+
+//   .aboutContent.show {
+//     display: block;
+//   }
+//   .programContent{
+//     display: none;
+//   }
+//   .programContent.show {
+//     display: block;
+//   }

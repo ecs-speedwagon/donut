@@ -23,3 +23,62 @@
         }
     }
 }
+.registration{
+    background-image: url(/img/mobile-circles/regist\ decor.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.title{
+    @include txt("Montserrat Alternates", 500, 23px, 30px, 0.03px, $dark-text,none, center);   
+}
+.regis-cont{
+    background-image:linear-gradient(
+        to top 
+        rgba(61, 44, 44, 0.6),
+        rgba(61, 44, 44, 0.6)),
+         url(/img/registration-bg.png);
+    height: 395px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+    & .reg-loc{
+        width: 260px;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(246, 247, 247, 0.6);
+        & .reg-loc-p{
+            @include txt("Montserrat", 500, 18px, 2px, 0.03px, $white-col,none, center);   
+            height: 18px;
+        }
+    }
+   & .form-cont{  
+    padding-top: 10px;
+        & >h3{
+            @include txt("Montserrat", 400, 16px, 20px, 0.03px, $white-col,none, center);  
+
+        }
+   }
+   & .register{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 3%;
+    padding-bottom: 20px;
+        & .register_el{
+            
+            background-color: inherit;
+            border: none;
+            width: 265px;
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+            &::placeholder{
+                @include txt("Montserrat", 400, 16px, 20px, 0.03px, $white-col,none, left);  
+                
+            }
+          
+        }
+
+   }
+}
