@@ -1,4 +1,6 @@
-
+.header{
+  position: relative;
+}
 header{
   @media screen and (min-width:1200px){
     position: relative;
@@ -23,9 +25,7 @@ header{
     }
   }
 }
-.header{
-  position: relative;
-}
+
 .header-div{
   position: absolute;
   margin: 0 auto;
@@ -83,17 +83,18 @@ header{
     }
   }
  .hero-text{
+  margin: 20px 20%;
     @include txt("Montserrat Alternates", 500, 16px, 20px, $dark-text,none,center);
     @media screen and (min-width:1200px){
       @include txt("Montserrat Alternates", 500, 24px, 29.26px, $dark-text,none,left);
       margin-bottom: 35px;
-    }  margin: 20px 0;
+    }  
   }
   .hero-div{
+    
     margin-bottom: 5px;
     width: 80px;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px auto;
       display: flex;
       gap: 15px;
    >svg{
@@ -126,9 +127,9 @@ header{
 .hero-text{
   text-align: start;
 }
-.hero-div{
-  margin: 20px 0px 0px;
-}
+// .hero-div{
+//   margin: 20px 0px 0px;
+// }
 
 
 .btn{
@@ -142,6 +143,21 @@ header{
     margin-left: 25%;
     width: 145px;
     height: 40px;
+}
+
+.btn:hover {
+  background-color: #ffffff; 
+  color: $pink-col;
+  
+  border: 2px solid $pink-col; 
+}
+
+.btn:active {
+  color: $white-col;
+  background-color: $pink-col;  
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2),
+   inset 0 -1px 2px rgba(255, 255, 255, 0.5), 
+  10px 15px 25px 0px rgba(232, 183, 183, 0.45); 
 }
 @media screen and (min-width:768px){
   .btn{

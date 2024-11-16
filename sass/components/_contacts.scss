@@ -10,3 +10,68 @@
         display: none;
     }
 }
+.title{
+    @include txt("Montserrat Alternates", 500, 23px, 30px, 0.03px, $dark-text,none, center);   
+}
+.contact-cont{
+    & >p{
+        @include txt("Montserrat", 400, 16px, 30px, 0.03px, $dark-text,none, center);   
+    }
+    & >button{
+        margin-top: 30px;
+    }
+    & .contact-form{
+        margin-left: 3%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & >input{
+            background-color: inherit;
+            border: none;
+            width: 265px;
+            border-bottom: 1px solid $dark-text;
+            &::placeholder{
+                @include txt("Montserrat", 400, 16px, 20px, 0.03px, rgba(60, 50, 45, 0.7),none, left);  
+                
+            }
+        }
+    }
+
+}
+.contact{
+    background-image: url(/img/mobile-circles/contact\ decor.png);
+    background-repeat: no-repeat;
+    background-position: 30px -40px;
+}
+
+.social-links{
+    margin-bottom: 5px;
+    width: 80px;
+    margin: 30px auto;
+      display: flex;
+      gap: 15px;
+   & .place-icon{
+        >use{
+        fill: $dark-text;
+            &:hover{
+            fill: $pink-col;
+            }
+        }
+   }
+}
+
+.foot-text{
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    & .foot-text_el{
+        >a{
+            @include txt("Montserrat", 400, 16px, 20px, 0.03px, $dark-text,none, right);   
+
+        }
+    }
+}
+.footer-donuts{
+  margin-left: 40%;
+}
