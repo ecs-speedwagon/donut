@@ -115,6 +115,11 @@ header{
       height: 46px;
     }
   }
+  @media screen and (min-width:1200px){
+    .logo{
+      margin-top: 10px;
+    }
+  }
   .hero{
     background-image:url(/img/tablet-circles/hero-circle.svg), url(/img/tablet-hero-bg.png);
     background-size: 100px 100px, cover;
@@ -129,8 +134,6 @@ header{
 .hero-div{
   margin: 20px 0px 0px;
 }
-
-
 .btn{
     @include txt("Montserrat", 400, 18px, 22px, $white-col,none, center);
     text-align: center;
@@ -148,8 +151,6 @@ header{
     margin-left: 0%;
   }
 }
-
-
 
 
 
@@ -253,9 +254,7 @@ header{
   margin-top: 20px;
   width: 190px;
   margin: 10px auto;
-
   @include txt("Montserrat Alternates", 500, 28px, 34px, 0.03px, $dark-text, none, center);   
-
 }
 // #fd588c
 .mobile-menu .link:focus{
@@ -278,4 +277,17 @@ inset  0px 25px 20px -2px $pink-col ;
     margin: 20px auto;
 
   }
+}
+.header-li{
+  padding: 8px 9px 8px 8px;
+  &:hover{
+    background-color: $pink-col;
+    padding: 8px 9px 8px 8px;
+  }
+  >a{
+    @include txt("Montserrat", 400, 18px, 21.94px, 0.03px, $dark-text, none, left); 
+    }
+    &:hover{
+    @include txt("Montserrat", 400, 18px, 21.94px, 0.03px, $white-col, none, left); 
+    }
 }
