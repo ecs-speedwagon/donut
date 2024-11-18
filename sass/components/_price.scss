@@ -18,6 +18,10 @@
         border-radius: 25px;
         box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.226);
         color: $white-col;
+        >button{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
         >h3{
             @include txt("Montserrat Alternates", 600, 18px, 22px, 0.03px, $dark-text,none, center);   
         }
@@ -25,6 +29,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+          
             & .choice_el{
                 
                 margin-top: 0;
