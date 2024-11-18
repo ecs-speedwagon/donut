@@ -180,6 +180,11 @@
     height: 46px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-top: 10px;
+  }
+}
 .hero {
   background-image: url(/img/tablet-circles/hero-circle.svg), url(/img/tablet-hero-bg.png);
   background-size: 100px 100px, cover;
@@ -376,6 +381,34 @@
     margin: 20px auto;
   }
 }
+.header-li {
+  padding: 8px 9px 8px 8px;
+}
+.header-li:hover {
+  background-color: #F3848C;
+  padding: 8px 9px 8px 8px;
+}
+.header-li > a {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.94px;
+  letter-spacing: 0.03px;
+  color: #3C322D;
+  text-decoration: none;
+  text-align: left;
+}
+.header-li:hover {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.94px;
+  letter-spacing: 0.03px;
+  color: #F6F7F7;
+  text-decoration: none;
+  text-align: left;
+}
+
 @media screen and (min-width: 768px) {
   .hero-icon {
     margin: 0;
@@ -598,7 +631,23 @@
   text-decoration: none;
   text-align: left;
 }
+<<<<<<< HEAD
+@media screen and (min-width: 1200px) {
+  .program .program-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.94px;
+    letter-spacing: 0.03px;
+    color: #3C322D;
+    text-decoration: none;
+    text-align: left;
+  }
+}
+.program .program-rm-decs {
+=======
 .program .programContent {
+>>>>>>> bb042d5f5a5223162e87d69a8a41619478f6b60d
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 18px;
@@ -651,6 +700,18 @@
   text-decoration: none;
   text-align: left;
   height: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .program .program-ul-el .program-ul-el-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.94px;
+    letter-spacing: 0.03px;
+    color: #3C322D;
+    text-decoration: none;
+    text-align: left;
+  }
 }
 .program .program-ul-el > img {
   height: 24px;
@@ -763,6 +824,11 @@
     width: 152px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .program-rm {
+    display: none;
+  }
+}
 .title {
   font-family: "Montserrat Alternates";
   font-weight: 500;
@@ -798,10 +864,13 @@
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);
   color: #F6F7F7;
 }
+<<<<<<< HEAD
+=======
 .price-ul .price-ul_el > button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+>>>>>>> bb042d5f5a5223162e87d69a8a41619478f6b60d
 .price-ul .price-ul_el > h3 {
   font-family: "Montserrat Alternates";
   font-weight: 600;
@@ -843,6 +912,27 @@
   text-align: left;
 }
 
+.btn-price {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: #F6F7F7;
+  color: none;
+  -webkit-text-decoration: center;
+          text-decoration: center;
+  text-align: left;
+  text-align: center;
+  color: #F6F7F7;
+  background-color: #F3848C;
+  border: none;
+  border-radius: 25px;
+  -webkit-box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+          box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+  width: 145px;
+  height: 40px;
+  margin: 33px 0px 20px 67px;
+}
 .price-ul_el:nth-child(3), .price-ul_el:nth-child(2) {
   background-image: url(/img/price-bg.png);
   background-repeat: no-repeat;
@@ -890,7 +980,6 @@ p {
     position: absolute;
     bottom: 20px;
     left: 40px;
-    margin: 0;
   }
   .price-ul .price-ul_el > h3 {
     font-family: "Montserrat Alternates";
@@ -916,6 +1005,17 @@ p {
     text-align: left;
   }
 }
+@media screen and (min-width: 768px) {
+  .price-ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-ul_el {
+    width: 394px;
+    height: 610px;
+  }
+}
 .speakers {
   background-image: url(/img/mobile-circles/speakers\ decor.png);
   background-repeat: no-repeat;
@@ -931,6 +1031,81 @@ p {
   color: #3C322D;
   text-decoration: none;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39.01px;
+    letter-spacing: 0.03px;
+    color: #3C322D;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+.speakers-h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  letter-spacing: 0.03px;
+  color: #3C322D;
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .speakers-h3 {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.94px;
+    letter-spacing: 0.03px;
+    color: #3C322D;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+.speakers-p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  letter-spacing: 0.03px;
+  color: #3C322D;
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .speakers-p {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.07px;
+    letter-spacing: 0.03px;
+    color: #3C322D;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .speakers-p {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: 0.03px;
+    color: #3C322D;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .speakers-p {
+    margin: 0 auto;
+  }
 }
 
 .speakers-ul {
@@ -1004,6 +1179,26 @@ p {
     width: 152px;
   }
 }
+<<<<<<< HEAD
+@media screen and (min-width: 1200px) {
+  .speakers-ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 32px;
+  }
+  .img-speakers {
+    width: 20px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .speakers-ul_el > div > img {
+    width: 288px;
+    height: 288px;
+  }
+}
+=======
 .participants_el:nth-child(2n+1) {
   display: none;
 }
@@ -1433,6 +1628,7 @@ p {
   margin-left: 40%;
 }
 
+>>>>>>> bb042d5f5a5223162e87d69a8a41619478f6b60d
 h5 {
   -webkit-margin-before: 0;
           margin-block-start: 0;

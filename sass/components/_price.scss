@@ -44,6 +44,22 @@
         }
     }
 }
+
+.btn-price{
+    @include txt("Montserrat", 400, 18px, 22px, $white-col,none, center);
+    text-align: center;
+    color: $white-col;
+    background-color: $pink-col;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+    width: 145px;
+    height: 40px;
+    margin: 33px 0px 20px 67px;
+    @media screen and (min-width:1200px) {
+        
+    }
+  }
 .price-ul_el:nth-child(3), .price-ul_el:nth-child(2){
 background-image: url(/img/price-bg.png);
 background-repeat: no-repeat;
@@ -84,7 +100,6 @@ p{
                 position: absolute;
                 bottom: 20px;
                 left: 40px;
-                margin: 0
             }
             >h3{
                 @include txt("Montserrat Alternates", 600, 18px, 22px, 0.03px, $dark-text,none, center);   
@@ -98,4 +113,13 @@ p{
         }
     }
     
+}
+@media screen and (min-width:768px) {
+    .price-ul{
+        justify-content: center;
+    }
+    .price-ul_el{
+        width: 394px;
+        height: 610px;
+    }
 }

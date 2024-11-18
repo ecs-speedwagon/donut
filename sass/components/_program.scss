@@ -13,6 +13,9 @@
        }
        & .program-text{
         @include txt("Montserrat", 400, 16px, 20px, 0.03px, $dark-text,none, left);   
+        @media screen and (min-width:1200px){
+          @include txt("Montserrat", 400, 18px, 21.94px, 0.03px, $dark-text,none, left);   
+        }
       }
       & .programContent{
         @include txt("Montserrat", 400, 18px, 22px, 0.03px, $dark-text,none, left);   
@@ -39,6 +42,9 @@
          & .program-ul-el-text{
             @include txt("Montserrat", 400, 16px, 20px, 0.03px, $dark-text,none, left);   
             height: 20px;
+            @media screen and (min-width:1200px){
+              @include txt("Montserrat", 400, 18px, 21.94px, 0.03px, $dark-text,none, left);   
+            }
          }
          >img{
             height: 24px;
@@ -132,4 +138,9 @@
       }
   }
       
+}
+@media screen and (min-width:1200px){
+.program-rm{
+  display: none;
+}
 }

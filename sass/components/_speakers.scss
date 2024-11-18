@@ -5,11 +5,33 @@
 }
 .title{
     @include txt("Montserrat Alternates", 500, 23px, 30px, 0.03px, $dark-text,none, center);   
+    @media screen and (min-width:1200px){
+        @include txt("Montserrat Alternates", 500, 32px, 39.01px, 0.03px, $dark-text,none, center);  
+    }
+}
+.speakers-h3{
+    @include txt("Montserrat", 600, 16px, 19.5px, 0.03px, $dark-text,none, center); 
+    @media screen and (min-width:768px){
+        @include txt("Montserrat", 500, 18px, 21.94px, 0.03px, $dark-text,none, center);  
+    }
+}
+
+.speakers-p{
+    @include txt("Montserrat", 500, 12px, 14.63px, 0.03px, $dark-text,none, center);  
+    @media screen and (min-width:768px){
+        @include txt("Montserrat", 500, 14px, 17.07px, 0.03px, $dark-text,none, center);  
+    }
+    @media screen and (min-width:768px){
+        @include txt("Montserrat", 500, 16px, 19.5px, 0.03px, $dark-text,none, center);  
+    }
+    @media screen and (min-width:1200px){
+        margin: 0 auto;
+    }
 }
 .speakers-ul{
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
-     gap:20px;
+    gap:20px;
 }
 .speakers-ul_el{
     >div{
@@ -51,4 +73,24 @@
         width: 152px;
     }
 }
+}
+@media screen and (min-width:1200px){
+    .speakers-ul{
+        justify-content: center;
+        gap: 32px;
+    }
+    .img-speakers{
+        width: 20px;
+        height: 30px;
+    }
+}
+@media screen and (min-width:1200px){
+    .speakers-ul_el{
+        >div{
+            >img{
+                width:  288px;
+                height: 288px;
+            }
+        }
+    }
 }
