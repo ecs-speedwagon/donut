@@ -1,34 +1,6 @@
 .participants_el:nth-child(2n+1){
     display:none;
 }
-@media screen and (min-width:768px){
-    .reviews{
-        padding-bottom: 80px;
-    }
-    .participants{
-        display: flex;
-        gap: 32px;
-        padding: 0px;
-        &_el-w{
-            margin-top: 75px;
-            & img{
-                width: 336px;
-                height: 336px;
-            }
-        }
-        &_el:nth-child(2n+1){
-            display:block;
-            & img{
-                width: 151px;
-                height: 151px;
-            }
-        }
-    }
-    .reviews-p{
-        text-align: center;
-        margin: 0px;
-    }
-}
 .title{
     @include txt("Montserrat Alternates", 500, 23px, 30px, 0.03px, $dark-text,none, center);   
 
@@ -79,5 +51,71 @@
     >p{
         @include txt("Montserrat", 400, 14px, 17px, 0.03px, $dark-text,none, center);   
 
+    }
+}
+@media screen and (min-width:768px){
+    .reviews{
+        padding-bottom: 40px;
+        background-image: url(/img/tablet-circles/reviews-bg.svg);
+        background-position: 60px 50px;
+    }
+    .title{
+        @include txt("Montserrat Alternates", 500, 32px, 30px, 0.03px, $dark-text,none, center);   
+    
+    }
+    .participants{
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        padding: 0px;
+        margin-bottom: 25px;
+        .participants_el{
+            >img{
+                border-radius: 50%;
+            }
+            &:nth-child(2){
+                margin-top: 75px;
+            }
+            &:nth-child(2n+1){
+                display:block;
+                & img{
+                    width: 151px;
+                    height: 151px;
+                }
+            }
+    
+          & p::before{
+            margin: 0 auto;
+            display: block;
+            content: "";
+            height: 25px;
+            width: 137px;
+            background-image: url(/img/filled-star.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &:first-child {
+            & p::before{
+                margin: 0 auto;
+                display: block;
+                content: "";
+                height: 25px;
+                width: 137px;
+                background-image: url(/img/empty-star.svg);
+            }
+        }
+            >p{
+                @include txt("Montserrat", 500, 14px, 17px, 0.03px, $dark-text,none, center);   
+                margin-top: 5px;
+            }
+        }
+        
+    }
+    .reviews-p{
+        margin: 0 auto;
+        width: 720px;
+        & span{
+            display: block;
+        }
     }
 }

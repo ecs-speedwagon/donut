@@ -109,6 +109,7 @@ header{
   }
   @media screen and (min-width:768px){
     .header-div{
+      justify-content: space-between;
       padding-top: 24px;
     }
     .logo{
@@ -132,17 +133,11 @@ header{
 .hero-text{
   text-align: start;
 }
-<<<<<<< HEAD
-.hero-div{
-  margin: 20px 0px 0px;
-}
-=======
 // .hero-div{
 //   margin: 20px 0px 0px;
 // }
 
 
->>>>>>> bb042d5f5a5223162e87d69a8a41619478f6b60d
 .btn{
     @include txt("Montserrat", 400, 18px, 22px, $white-col,none, center);
     text-align: center;
@@ -173,6 +168,7 @@ header{
 @media screen and (min-width:768px){
   .btn{
     margin-left: 0%;
+    margin-top: 25px;
   }
 }
 
@@ -220,6 +216,11 @@ header{
   outline: none;
 }
 
+@media (min-width: 768px) {
+  .menu-toggle {
+    margin-right: 5%;
+  }
+}
 @media (min-width: 1200px) {
   .menu-toggle {
     display: none;
