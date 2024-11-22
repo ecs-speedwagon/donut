@@ -53,40 +53,62 @@
     }
    }
    .program-imgs{
-         & .program-imgs-ul{
-             display: flex;
-             flex-wrap: wrap;
-            gap: 20px;
-          }
-         & .program-imgs-title{
-             @include txt("Montserrat Alternates", 500, 14px, 17px, 0.03px, $dark-text,none, center);   
-            }
-         & .program-imgs-text{
-            @include txt("Montserrat", 400, 12px, 15px, 0.03px, $dark-text,none, center); 
-           }
-    & .program-imgs-el{
-      border-radius: 50%;
-      overflow: hidden;
-      width: 130px;
-      height: 130px;
-      position: relative;
-      border: 2px solid #f0a0a0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-         & >img{
-              width: 100%;
-              height: 100%;
-              
-              object-fit: cover;
-           }
-         
-          & .program-imgs-div{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-          }
+    
+    & .program-imgs-ul{
+        display: flex;
+        flex-wrap: wrap;
+       gap: 20px;
+       padding-bottom: 20px;
+     }
+    & .program-imgs-title{
+        @include txt("Montserrat Alternates", 500, 13px, 17px, 0.03px, $white-col,none, center);   
+        position: relative;
+        width: 129px;
+        z-index: 2;
+       }
+    & .program-imgs-text{
+       @include txt("Montserrat", 400, 12px, 15px, 0.03px, $white-col,none, center); 
+       position: relative;
+       z-index: 2;
       }
-   }
+& .program-imgs-el{
+
+ border-radius: 50%;
+ overflow: hidden;
+ width: 130px;
+ height: 130px;
+ position: relative;
+ border: 2px solid #f0a0a0;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ &::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(0.1deg, #000000 -10.83%, rgba(156, 156, 156, 0) 78.01%);
+   z-index: 1;
+}
+ &:nth-child(2n){
+         top: 20px;
+       }
+    & >img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+
+      }
+    
+     & .program-imgs-div{
+       position: absolute;
+       bottom: 25px;
+       left: 0;
+       right: 0;
+     }
+ }
+}
  //  &:nth-child(2n+2){
           //   padding-top: 20px;
           //   & .program-imgs-div{
@@ -125,7 +147,9 @@
         @include txt("Montserrat", 500, 18px, 20px, 0.03px, $dark-text,none, center);
         }
         .program-imgs {
-          width: calc(100% - 350px - 32px);
+          display: flex;
+          flex-wrap: wrap;
+          width: calc((100% - 32px) /2);
         }
         & .program-imgs-el{
           height: 152px;
