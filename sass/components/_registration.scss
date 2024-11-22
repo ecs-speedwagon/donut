@@ -20,7 +20,8 @@
 
     & .reg-loc{
         width: 260px;
-        margin: 0 auto;
+
+       margin-left: 180px;
         padding-top: 50px;
         padding-bottom: 15px;
         border-bottom: 1px solid rgba(246, 247, 247, 0.6);
@@ -57,7 +58,7 @@
 
    }
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) and ( max-width:1199px){
     .registration{
         padding-top: 40px;
         padding-bottom: 80px;
@@ -72,7 +73,6 @@
             background-repeat: no-repeat;
             background-size: 100px 66px, contain, contain;
             background-position: 23px 160px, left, right;
-
         & .register{
             display: flex;
             flex-direction: column;
@@ -119,3 +119,80 @@
         }
     }
 }
+@media screen and (min-width:1200px){   
+    .registration{
+        padding-top: 40px;
+        padding-bottom: 80px;
+        background-image: url(/img/desc-circles/registration-circle.svg);
+        background-position: 270px 160px;
+    }
+        // .regis-cont{
+        //     width: 1023px;
+        //     background-image:url(/img/rectangle-desc.png);
+        //     background-repeat: no-repeat;
+        //     background-size: 972px 246px;
+        //     background-color: red;
+        // }
+        .regis-cont{
+            max-width: 1023px;
+
+            margin: 0 auto;
+            display: flex;
+            gap: 23px;
+            height: 246px;
+            padding: 40px 40px 32px 62px;
+            background-image: 
+                url(/img/register-donuts.svg) , url(/img/rectangle-desc.png) , url(/img/donut-bg.png);
+            background-repeat: no-repeat;
+            background-size: 200px 133px, contain, contain;
+            background-position: 10px 110px, left, right;
+            box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+            
+            
+            & .register{
+                display: flex;
+                flex-direction: column;
+                width: 283px;
+                margin-bottom: 24px;
+                margin: 0;
+                & .register_el{
+                    width: 237px;
+                    border-bottom: 1px solid $dark-text;
+                    &:focus{
+                        border: inherit;
+                    }
+                    &::placeholder{
+                        @include txt("Montserrat", 400, 16px, 20px, 0.03px,rgba($color: #000000, $alpha: 0.5),none, left);  
+    
+                    }
+                }
+            }
+            & .reg-loc{
+                width: 123px;
+                height: 154px;
+                margin-top:20px;
+                padding: 25px 32px 15px 0px;
+                padding-right: 32px;
+                border: none;
+                border-right: 1.5px solid rgba($color: #000000, $alpha: 0.5);
+                & .reg-loc-p{
+                    @include txt("Montserrat", 500, 18px, 20px, 0.03px, $dark-text,none, right);   
+                    height:auto;
+                    // margin-right: 32px;
+                }
+            }
+            & .form-cont{  
+                padding-top: 0px;
+                    & >h3{
+                        margin-top: 0px;
+                        @include txt("Montserrat", 400, 16px, 20px, 0.03px, $dark-text,none, left);  
+                    
+                    }
+               }
+            
+            & .btn{
+                align-self: center;
+            }
+        }
+
+    }

@@ -18,3 +18,13 @@
       margin: 20px 0px 0px;
     }
 }
+@media screen and (min-width:1200px){
+  .hero{
+    background-image:url(/img/desc-circles/header-cirle.svg), url(/img/donut-bg-desctop.png);
+    background-size: 100px 100px, cover;
+    background-position: 449px 171px, center;
+    padding: 95px 0 40px;
+    margin-bottom: 36px;
+    width: 100%;
+  }
+}

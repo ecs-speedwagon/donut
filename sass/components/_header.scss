@@ -38,7 +38,6 @@ header{
   @media screen and (min-width:1200px){
     display: flex;
     flex-direction: row;
-    gap: 23px;
   }
 }
 .header-nav{
@@ -136,8 +135,6 @@ header{
 // .hero-div{
 //   margin: 20px 0px 0px;
 // }
-
-
 .btn{
     @include txt("Montserrat", 400, 18px, 22px, $white-col,none, center);
     text-align: center;
@@ -154,7 +151,6 @@ header{
 .btn:hover {
   background-color: #ffffff; 
   color: $pink-col;
-  
   border: 2px solid $pink-col; 
 }
 
@@ -254,7 +250,7 @@ header{
   }
 }
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: translateX(0); 
 }
 
 .menu-container .menu-toggle {
@@ -285,10 +281,9 @@ header{
 .mobile-menu .link:focus{
   background-color: #fd588c;
   color: $white-col;
- 
-box-shadow:
-0px 2px 10px 1px rgba(0, 0, 0, 0.178),
-inset  0px 25px 20px -2px $pink-col ;
+  box-shadow:
+  0px 2px 10px 1px rgba(0, 0, 0, 0.178),
+  inset  0px 25px 20px -2px $pink-col ;
 
 }
 @media screen and (min-width:768px){
@@ -305,14 +300,33 @@ inset  0px 25px 20px -2px $pink-col ;
 }
 .header-li{
   padding: 8px 9px 8px 8px;
+  >a{
+    @include txt("Montserrat", 400, 18px, 21.94px, 0.03px, $dark-text, none, left); 
+    padding: 8px 9px 8px 8px;
+  }
   &:hover{
     background-color: $pink-col;
     padding: 8px 9px 8px 8px;
+    background-color: #fd588c;
+    color: $white-col;
+    box-shadow:
+    0px 2px 10px 1px rgba(0, 0, 0, 0.178),
+    inset  0px 25px 20px -2px $pink-col ;
+    >a{
+      &:hover{
+        @include txt("Montserrat", 400, 18px, 21.94px, 0.03px, $white-col, none, left); 
+        color: $white-col;
+      }
+    }
   }
-  >a{
-    @include txt("Montserrat", 400, 18px, 21.94px, 0.03px, $dark-text, none, left); 
-    }
-    &:hover{
-    @include txt("Montserrat", 400, 18px, 21.94px, 0.03px, $white-col, none, left); 
-    }
+}
+@media screen and (min-width:1200px){
+  .menu-container {
+    display: none;
+  }
+  .hero{
+    background-image:url(/img/desc-circles/header-cirle.svg);
+    background-position: 268px 92px;
+    background-size: contain;
+}
 }

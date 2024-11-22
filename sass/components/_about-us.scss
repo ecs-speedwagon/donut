@@ -86,8 +86,12 @@
 .about-us-img{
     display: none;
 }
-    .about-us-img-daesctop{
-        display: block;
-    }
+.about-us-img-daesctop{
+    display: block;
 }
-
+.about-us{
+    background-image: url(/img/desc-circles/about-us-bg.svg);
+    background-repeat: no-repeat;
+    background-position:  1090px 40px;
+}
+}

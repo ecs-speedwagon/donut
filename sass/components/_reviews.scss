@@ -119,3 +119,48 @@
         }
     }
 }
+@media screen and (min-width:1200px){
+    .reviews-p{
+        margin: 0 auto;
+        width: 970px;
+    }
+    .reviews{
+        background-image: url(/img/desc-circles/rewews-circle.svg);
+        background-position: 320px 2px;
+        background-repeat: no-repeat;
+    }
+    .div-p{
+        padding-top: 40px;
+        height: 110px;
+        background-image: url(/img/desc-circles/circle-rewews.svg);
+        background-position: 130px 0px;
+        background-repeat: no-repeat;
+    }
+    .participants{
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        padding: 0px;
+        margin-bottom: 25px;
+    .participants_el{
+            >img{
+                border-radius: 50%;
+            }
+            &:nth-child(2){
+                margin-top: 75px;
+                // !!!
+                >img{
+                    width:  394px;
+                    height: 394px;
+                }
+            }
+            &:nth-child(2n+1){
+                display:block;
+                & img{
+                    width:  288px;
+                    height: 288px;
+                }
+            }
+        }
+}
+}

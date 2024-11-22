@@ -7,13 +7,17 @@
     background-image: url(/img/mobile-circles/price\ decor.png);
     background-repeat: no-repeat;
     background-position: 20px 0px;
-}
+} 
 .price-ul{
     margin-top: 30px;
     position: relative;
     display: flex;
     gap: 50px;
     flex-direction: column;
+    
+    .price-ul_el:hover{
+        outline: solid 1px $pink-col;
+    }
     & .price-ul_el{
         border-radius: 25px;
         box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.226);
@@ -21,6 +25,9 @@
         >button{
             margin-top: 20px;
             margin-bottom: 20px;
+            @media screen and (min-width:1200px) {
+                margin-left: 70px;
+            }
         }
         >h3{
             @include txt("Montserrat Alternates", 600, 18px, 22px, 0.03px, $dark-text,none, center);   
@@ -56,8 +63,13 @@
     width: 145px;
     height: 40px;
     margin: 33px 0px 20px 67px;
+    &:hover{
+        background-color: #ffffff; 
+        color: $pink-col;
+        border: 2px solid $pink-col; 
+    }
     @media screen and (min-width:1200px) {
-        
+        margin-left: 90px;
     }
   }
 .price-ul_el:nth-child(3), .price-ul_el:nth-child(2){
@@ -125,4 +137,21 @@ p{
         width: 394px;
         height: 610px;
     }
+}
+@media screen and (min-width:1200px){
+    .price{
+        padding-top: 40px;
+        background-image: url(/img/desc-circles/price-circle.svg);
+        background-repeat: no-repeat;
+        background-position: 660px 0px;
+    }
+    .price-ul{
+        gap: 32px;
+    }
+    .price-ul_el:nth-child(3), .price-ul_el:nth-child(2), .price-ul_el:nth-child(1){
+        background-image: url(/img/price-bg.png);
+        background-repeat: no-repeat;
+        background-size: 300px 218px;
+        background-position: 0% 85%;
+        }
 }
