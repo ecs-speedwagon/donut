@@ -428,7 +428,7 @@
     display: none;
   }
   .hero {
-    background-image: url(/img/desc-circles/header-cirle.svg);
+    background-image: url(./img/desc-circles/header-circle.svg);
     background-position: 268px 92px;
     background-size: contain;
   }
@@ -632,7 +632,7 @@
     display: block;
   }
   .about-us {
-    background-image: url(/img/desc-circles/about-us-bg.svg);
+    background-image: url(/img/desc-circles/about-us-circle.svg);
     background-repeat: no-repeat;
     background-position: 1090px 40px;
   }
@@ -891,10 +891,67 @@
     display: none;
   }
   .program {
-    padding: 50px 0px 20px;
-    background-image: url(/img/desc-circles/programm-circle.svg);
-    background-position: 420px -120px;
+    max-height: 800px;
+    padding: 200px 0px 20px;
+    margin-bottom: 50px;
+    background-image: url(/img/desc-circles/program-circle.svg);
+    background-position: 420px 30px;
     background-repeat: no-repeat;
+  }
+  .program-imgs {
+    margin-left: 15%;
+  }
+  .program-imgs .program-imgs-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 20px;
+  }
+  .program-imgs .program-imgs-el {
+    width: 288px;
+    height: 288px;
+  }
+  .program-imgs .program-imgs-el:nth-child(2n) {
+    top: 60px;
+    left: 120px;
+  }
+  .program-imgs .program-imgs-el .program-imgs-title {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03px;
+    color: #F6F7F7;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10%;
+    position: relative;
+    width: 220px;
+  }
+  .program-imgs .program-imgs-el .program-imgs-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03px;
+    color: #F6F7F7;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+  }
+  .program-imgs .program-imgs-el .program-imgs-text:first-child {
+    padding-bottom: 50px;
+    bottom: -50px;
+  }
+  .program-imgs .program-imgs-el:nth-child(1) {
+    height: 288px;
+    width: 288px;
+  }
+  .program-imgs .program-imgs-el .program-imgs-div {
+    bottom: 50px;
   }
 }
 .title {
@@ -1301,9 +1358,10 @@ p {
     height: 288px;
   }
   .speakers {
-    background-image: url(/img/desc-circles/speakes-circle.svg);
+    background-image: url(/img/desc-circles/speakers-circle.svg);
     background-position: top;
     background-repeat: no-repeat;
+    padding-top: 100px;
   }
 }
 .participants_el:nth-child(2n+1) {
@@ -1475,14 +1533,14 @@ p {
     width: 970px;
   }
   .reviews {
-    background-image: url(/img/desc-circles/rewews-circle.svg);
+    background-image: url(/img/desc-circles/rewews-cricle.svg);
     background-position: 320px 2px;
     background-repeat: no-repeat;
   }
   .div-p {
     padding-top: 40px;
     height: 110px;
-    background-image: url(/img/desc-circles/circle-rewews.svg);
+    background-image: url(/img/desc-circles/circle-registration.svg);
     background-position: 130px 0px;
     background-repeat: no-repeat;
   }
@@ -1789,7 +1847,7 @@ p {
     gap: 23px;
     height: 246px;
     padding: 40px 40px 32px 62px;
-    background-image: url(/img/register-donuts.svg), url(/img/rectangle-desc.png), url(/img/donut-bg.png);
+    background-image: url(/img/register-donuts.svg), url(/img/des-reg.png), url(/img/donut-bg.png);
     background-repeat: no-repeat;
     background-size: 200px 133px, contain, contain;
     background-position: 10px 110px, left, right;
