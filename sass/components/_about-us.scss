@@ -43,10 +43,6 @@
                 display: none;
             }
         }
-        // @include txt("Montserrat", 500, 16px, 20px, 0.03px, $dark-text,none, center);   
-        // @media screen and (min-width:1200px){
-        //     display: none;
-        // }
     }
     
 }
@@ -90,7 +86,7 @@
     display: block;
 }
 .about-us{
-    background-image: url(/img/desc-circles/about-us-bg.svg);
+    background-image: url(/img/desc-circles/about-us-circle.svg);
     background-repeat: no-repeat;
     background-position:  1090px 40px;
 }

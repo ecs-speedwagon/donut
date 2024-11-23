@@ -132,9 +132,6 @@ header{
 .hero-text{
   text-align: start;
 }
-// .hero-div{
-//   margin: 20px 0px 0px;
-// }
 .btn{
     @include txt("Montserrat", 400, 18px, 22px, $white-col,none, center);
     text-align: center;
@@ -277,7 +274,6 @@ header{
   margin: 10px auto;
   @include txt("Montserrat Alternates", 500, 28px, 34px, 0.03px, $dark-text, none, center);   
 }
-// #fd588c
 .mobile-menu .link:focus{
   background-color: #fd588c;
   color: $white-col;
@@ -325,7 +321,7 @@ header{
     display: none;
   }
   .hero{
-    background-image:url(/img/desc-circles/header-cirle.svg);
+    background-image:url(./img/desc-circles/header-circle.svg);
     background-position: 268px 92px;
     background-size: contain;
 }

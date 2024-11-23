@@ -113,9 +113,7 @@
             border-right: 1.5px solid rgba($color: #000000, $alpha: 0.5);
             & .reg-loc-p{
                 @include txt("Montserrat", 500, 18px, 20px, 0.03px, $dark-text,none, right);   
-                height:auto;
-                // margin-right: 32px;
-            }
+                height:auto;            }
         }
         & .form-cont{  
             padding-top: 0px;
@@ -138,13 +136,6 @@
         background-image: url(/img/desc-circles/registration-circle.svg);
         background-position: 270px 160px;
     }
-        // .regis-cont{
-        //     width: 1023px;
-        //     background-image:url(/img/rectangle-desc.png);
-        //     background-repeat: no-repeat;
-        //     background-size: 972px 246px;
-        //     background-color: red;
-        // }
         .regis-cont{
             max-width: 1023px;
 
@@ -154,7 +145,7 @@
             height: 246px;
             padding: 40px 40px 32px 62px;
             background-image: 
-                url(/img/register-donuts.svg) , url(/img/rectangle-desc.png) , url(/img/donut-bg.png);
+                url(/img/register-donuts.svg) , url(/img/des-reg.png) , url(/img/donut-bg.png);
             background-repeat: no-repeat;
             background-size: 200px 133px, contain, contain;
             background-position: 10px 110px, left, right;
@@ -190,7 +181,6 @@
                 & .reg-loc-p{
                     @include txt("Montserrat", 500, 18px, 20px, 0.03px, $dark-text,none, right);   
                     height:auto;
-                    // margin-right: 32px;
                 }
             }
             & .form-cont{  
