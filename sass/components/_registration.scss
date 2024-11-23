@@ -21,7 +21,7 @@
     & .reg-loc{
         width: 260px;
 
-       margin-left: 180px;
+       margin-left: 10px;
         padding-top: 50px;
         padding-bottom: 15px;
         border-bottom: 1px solid rgba(246, 247, 247, 0.6);
@@ -173,6 +173,7 @@
             & .reg-loc{
                 width: 123px;
                 height: 154px;
+                margin-left: 180px;
                 margin-top:20px;
                 padding: 25px 32px 15px 0px;
                 padding-right: 32px;
