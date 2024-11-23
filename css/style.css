@@ -877,11 +877,33 @@
         flex-wrap: wrap;
     width: calc((100% - 32px) / 2);
   }
-  .program .program-imgs-el {
-    height: 152px;
+  .program .program-imgs .program-imgs-title {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.03px;
+    color: #F6F7F7;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
     width: 152px;
+    margin-bottom: 15px;
+    z-index: 2;
   }
-  .program .program-imgs-el:nth-child(1) {
+  .program .program-imgs .program-imgs-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.03px;
+    color: #F6F7F7;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .program .program-imgs-el {
     height: 152px;
     width: 152px;
   }
@@ -945,10 +967,6 @@
   .program-imgs .program-imgs-el .program-imgs-text:first-child {
     padding-bottom: 50px;
     bottom: -50px;
-  }
-  .program-imgs .program-imgs-el:nth-child(1) {
-    height: 288px;
-    width: 288px;
   }
   .program-imgs .program-imgs-el .program-imgs-div {
     bottom: 50px;
@@ -1601,7 +1619,7 @@ p {
 }
 .regis-cont .reg-loc {
   width: 260px;
-  margin-left: 180px;
+  margin-left: 10px;
   padding-top: 50px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(246, 247, 247, 0.6);
@@ -1926,6 +1944,7 @@ p {
   .regis-cont .reg-loc {
     width: 123px;
     height: 154px;
+    margin-left: 180px;
     margin-top: 20px;
     padding: 25px 32px 15px 0px;
     padding-right: 32px;

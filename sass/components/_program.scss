@@ -137,15 +137,28 @@
           display: flex;
           flex-wrap: wrap;
           width: calc((100% - 32px) /2);
+
+          & .program-imgs-title{
+            @include txt("Montserrat Alternates", 500, 16px, 17px, 0.03px, $white-col,none, center);   
+            position: relative;
+            width: 152px;
+            margin-bottom: 15px;
+            z-index: 2;
+           }
+        & .program-imgs-text{
+           @include txt("Montserrat", 400, 14px, 15px, 0.03px, $white-col,none, center); 
+           position: relative;
+           z-index: 2;
+          }
         }
         & .program-imgs-el{
           height: 152px;
           width: 152px;
-          &:nth-child(1){
-            height: 152px;
-            width: 152px;
+        //   &:nth-child(1){
+        //     height: 152px;
+        //     width: 152px;
     
-        }
+        // }
       }
   }
       
@@ -191,10 +204,6 @@
            bottom: -50px;
           }
           }
-          &:nth-child(1){
-              height: 288px;
-              width:  288px;
-         }
          & .program-imgs-div{
           bottom: 50px;
         
