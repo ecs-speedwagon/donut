@@ -317,6 +317,9 @@
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  background-image: url(/img/mobile-circles/mob-menu1.png), url(/img/mobile-circles/mob-menu2.png), url(/img/mobile-circles/mob-menu3.png);
+  background-repeat: no-repeat;
+  background-position: 1px 640px, 270px 47px, 260px 400px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2086,7 +2089,7 @@ p {
 .social-links {
   margin-bottom: 5px;
   width: 80px;
-  margin: 10px 126px;
+  margin: 10px 106px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2099,11 +2102,16 @@ p {
   fill: #F3848C;
 }
 
+@media screen and (min-width: 768px) {
+  .social-links {
+    margin: 10px 126px;
+  }
+}
 .foot-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
+  margin-right: 10%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2259,4 +2267,6 @@ h4 {
 
 html, body {
   overflow-x: hidden;
+  position: relative;
+  z-index: 100000;
 }/*# sourceMappingURL=style.css.map */
