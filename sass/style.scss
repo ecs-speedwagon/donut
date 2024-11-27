@@ -28,6 +28,8 @@ h4{
   }
   html, body{
     overflow-x: hidden;
+    position: relative;
+    z-index: 100000;
   }
 //   .aboutContent {
 //     display: none;
